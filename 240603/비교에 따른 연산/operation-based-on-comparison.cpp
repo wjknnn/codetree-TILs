@@ -3,6 +3,6 @@
 int main() {
     int a, b;
     scanf("%d %d", &a, &b);
-    printf("%d", a > b ? a * b : b % a);
+    printf("%d", a > b ? a * b : b / a);
     return 0;
 }
