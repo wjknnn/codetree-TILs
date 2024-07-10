@@ -16,12 +16,13 @@ void DFS(int vertex) {
 int main() {
     int i, x, y;
     scanf("%d %d", &n, &m);
+    visited[1] = 1;
     for(i = 0; i < m; i++) {
         scanf("%d %d", &x, &y);
         graph[x][y] = 1;
         graph[y][x] = 1;
     }
     DFS(1);
-    printf("%d", m < 1 ? 0 : cnt - 1);
+    printf("%d", cnt);
     return 0;
 }
