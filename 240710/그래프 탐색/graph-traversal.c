@@ -22,6 +22,6 @@ int main() {
         graph[y][x] = 1;
     }
     DFS(1);
-    printf("%d", cnt - 1);
+    printf("%d", m < 1 ? 0 : cnt - 1);
     return 0;
 }
