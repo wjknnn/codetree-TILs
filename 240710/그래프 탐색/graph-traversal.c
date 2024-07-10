@@ -19,8 +19,9 @@ int main() {
     for(i = 0; i < m; i++) {
         scanf("%d %d", &x, &y);
         graph[x][y] = 1;
+        graph[y][x] = 1;
     }
     DFS(1);
-    printf("%d", cnt);
+    printf("%d", cnt - 1);
     return 0;
 }
