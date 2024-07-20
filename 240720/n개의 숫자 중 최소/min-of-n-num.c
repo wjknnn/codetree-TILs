@@ -2,7 +2,7 @@
 #include <limits.h>
 
 int main() {
-    int N, n, min_val = INT_MAX, min_cnt = 1;
+    int N, n, min_val = INT_MAX, min_cnt = 0;
     scanf("%d", &N);
     for(int i = 0; i < N; i++) {
         scanf("%d", &n);
