@@ -12,6 +12,8 @@ for _ in range(m):
 
     for i in range(n):
         if arr[i] >= k:
+            if n > 50:
+                print("hi")
             print(i + 1)
             is_escape = True
         if is_escape:
