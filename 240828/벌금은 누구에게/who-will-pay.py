@@ -4,7 +4,7 @@ arr = [
     0 for _ in range(n)
 ]
 
-for _ in range(n):
+for _ in range(m):
     st = int(input())
     arr[st - 1] += 1
 
