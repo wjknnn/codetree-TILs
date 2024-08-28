@@ -4,6 +4,8 @@ arr = [
     0 for _ in range(n)
 ]
 
+is_escape = False
+
 for _ in range(m):
     st = int(input())
     arr[st - 1] += 1
@@ -11,6 +13,11 @@ for _ in range(m):
     for i in range(n):
         if arr[i] >= k:
             print(i + 1)
-            return
+            is_escape = True
+        if is_escape:
+            break
+    if is_escape:
+        break
 
-print(-1)
+if not is_escape:
+    print(-1)
