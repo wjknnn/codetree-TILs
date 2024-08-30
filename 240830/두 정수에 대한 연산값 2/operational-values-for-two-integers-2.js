@@ -1,5 +1,8 @@
 const fs = require('fs')
-const [a, b] = fs.readFileSync("/dev/stdin").toString().trim().split(' ')
+const [A, B] = fs.readFileSync("/dev/stdin").toString().trim().split(' ')
+
+let a = A;
+let b = B;
 
 if (a > b) {
     a *= 2;
