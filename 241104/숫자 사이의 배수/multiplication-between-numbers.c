@@ -9,6 +9,6 @@ int main() {
             sum += i;
         }
     }
-    printf("%d %.1lf", sum, sum / cnt);
+    printf("%d %.1lf", sum, (double)sum / (double)cnt);
     return 0;
 }
